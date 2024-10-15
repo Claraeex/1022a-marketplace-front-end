@@ -40,3 +40,25 @@
 .read-the-docs {
   color: #888;
 }
+
+.produtos-container{
+   display: flex;
+   gap:15px;
+}
+
+.produto-item{
+   width: 300px;
+   border: 1px solid  pink;
+   padding: 15px 20px;
+   box-sizing: border-box;
+   box-shadow: 0px 0px 5px 5px palevioletred;
+}
+
+.container-imagem{
+  overflow: hidden;
+  height: 200%;
+}
+
+.produto-item>.container-imagem>img{
+  width: 100%;
+}
