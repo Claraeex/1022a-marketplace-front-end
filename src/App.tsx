@@ -28,7 +28,7 @@ function App() {
   // useEffect para buscar produtos do backend ao carregar o componente
   useEffect(() => {
     // Fazendo uma requisição para a API para obter os produtos
-    fetch("https://one022a-marketplace-czsd.onrender.com/produtos")
+    fetch("http://localhost:8000/produtos")
       .then(resposta => resposta.json()) // Convertendo a resposta para JSON
       .then(dados => setProdutos(dados)) // Atualizando o estado com os dados recebidos
   }, []) // Array vazio significa que o efeito roda apenas uma vez, na montagem do componente
@@ -36,7 +36,7 @@ function App() {
   // useEffect para buscar usuários do backend ao carregar o componente
   useEffect(() => {
     // Fazendo uma requisição para a API para obter os usuários
-    fetch("https://one022a-marketplace-czsd.onrender.com/usuarios")
+    fetch("https://one022a-marketplace-a9ls.onrender.com/usuarios")
       .then(resposta => resposta.json()) // Convertendo a resposta para JSON
       .then(dados => setUsuarios(dados)) // Atualizando o estado com os dados recebidos
   }, []) // Array vazio significa que o efeito roda apenas uma vez, na montagem do componente
