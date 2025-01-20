@@ -7,8 +7,11 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import CadastroProduto from './componentes/cadastroproduto/CadastroProduto.tsx';
+<<<<<<< HEAD
 import AlterarProduto from './componentes/cadastroproduto/alterarproduto/AlterarProduto.tsx';
 
+=======
+>>>>>>> f29e65c38dabb8211f9d17829b61304d2f8e839f
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,10 +21,13 @@ const router = createBrowserRouter([
     path: "/cadastro-produto",
     element: <CadastroProduto/>,
   },
+<<<<<<< HEAD
   {
     path: "/alterar-produto/:id",
     element: <AlterarProduto/>,
   },
+=======
+>>>>>>> f29e65c38dabb8211f9d17829b61304d2f8e839f
 ]);
 
 createRoot(document.getElementById('root')!).render(
